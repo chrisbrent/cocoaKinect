@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D175E56F129EFCAB006C8E49 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = D175E568129EFCAB006C8E49 /* cameras.c */; };
+		D175E570129EFCAB006C8E49 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = D175E569129EFCAB006C8E49 /* core.c */; };
+		D175E573129EFCAB006C8E49 /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = D175E56D129EFCAB006C8E49 /* usb_libusb10.c */; };
+		D1851712129A0EA100D2014E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1851711129A0EA100D2014E /* AppDelegate.m */; };
+		D1975A35129A02E900216BE8 /* libusb-1.0.0.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A30129A02E900216BE8 /* libusb-1.0.0.1.0.dylib */; };
+		D1975A36129A02E900216BE8 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A31129A02E900216BE8 /* libusb-1.0.0.dylib */; };
+		D1975A37129A02E900216BE8 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A32129A02E900216BE8 /* libusb-1.0.a */; };
+		D1975A38129A02E900216BE8 /* libusb-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A33129A02E900216BE8 /* libusb-1.0.dylib */; };
+		D1975A39129A02E900216BE8 /* libusb-1.0.la in Resources */ = {isa = PBXBuildFile; fileRef = D1975A34129A02E900216BE8 /* libusb-1.0.la */; };
+		D1975A3B129A030700216BE8 /* libusb-1.0.0.1.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A30129A02E900216BE8 /* libusb-1.0.0.1.0.dylib */; };
+		D1975A3C129A030700216BE8 /* libusb-1.0.a in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A32129A02E900216BE8 /* libusb-1.0.a */; };
+		D1975A3D129A030700216BE8 /* libusb-1.0.la in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A34129A02E900216BE8 /* libusb-1.0.la */; };
+		D1975A3E129A031800216BE8 /* libusb-1.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A31129A02E900216BE8 /* libusb-1.0.0.dylib */; };
+		D1975A3F129A032D00216BE8 /* libusb-1.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A33129A02E900216BE8 /* libusb-1.0.dylib */; };
+		D1A6730E12A78BA9009A4C3D /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = D1A6730D12A78BA9009A4C3D /* tilt.c */; };
+		D1AB2A0D129490210056289F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AB2A0C129490210056289F /* OpenGL.framework */; };
+		D1AB2A14129490720056289F /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AB2A13129490720056289F /* GLView.m */; };
+		D1AB2A1C129491B00056289F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AB2A1B129491B00056289F /* CoreVideo.framework */; };
+		D1DE96A612A0F42100222313 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DE96A512A0F42100222313 /* GLProgram.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1AB2A9A1294966F0056289F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "libusb-1.0";
+			dstSubfolderSpec = 10;
+			files = (
+				D1975A3F129A032D00216BE8 /* libusb-1.0.dylib in Copy Frameworks */,
+				D1975A3C129A030700216BE8 /* libusb-1.0.a in Copy Frameworks */,
+				D1975A3E129A031800216BE8 /* libusb-1.0.0.dylib in Copy Frameworks */,
+				D1975A3D129A030700216BE8 /* libusb-1.0.la in Copy Frameworks */,
+				D1975A3B129A030700216BE8 /* libusb-1.0.0.1.0.dylib in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* cocoaKinect_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoaKinect_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* cocoaKinect-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cocoaKinect-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* cocoaKinect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocoaKinect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D175E568129EFCAB006C8E49 /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cameras.c; sourceTree = "<group>"; };
+		D175E569129EFCAB006C8E49 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		D175E56A129EFCAB006C8E49 /* freenect_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freenect_internal.h; sourceTree = "<group>"; };
+		D175E56D129EFCAB006C8E49 /* usb_libusb10.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usb_libusb10.c; sourceTree = "<group>"; };
+		D175E56E129EFCAB006C8E49 /* usb_libusb10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb_libusb10.h; sourceTree = "<group>"; };
+		D1851710129A0EA100D2014E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1851711129A0EA100D2014E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1975A30129A02E900216BE8 /* libusb-1.0.0.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.1.0.dylib"; sourceTree = "<group>"; };
+		D1975A31129A02E900216BE8 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = "<group>"; };
+		D1975A32129A02E900216BE8 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libusb-1.0.a"; sourceTree = "<group>"; };
+		D1975A33129A02E900216BE8 /* libusb-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.dylib"; sourceTree = "<group>"; };
+		D1975A34129A02E900216BE8 /* libusb-1.0.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libusb-1.0.la"; sourceTree = "<group>"; };
+		D1975A4D129A041B00216BE8 /* libfreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfreenect.h; sourceTree = "<group>"; };
+		D1A6730D12A78BA9009A4C3D /* tilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tilt.c; sourceTree = "<group>"; };
+		D1AB2A0C129490210056289F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D1AB2A12129490720056289F /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		D1AB2A13129490720056289F /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		D1AB2A1B129491B00056289F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D1DE96A412A0F42100222313 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
+		D1DE96A512A0F42100222313 /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				D1AB2A0D129490210056289F /* OpenGL.framework in Frameworks */,
+				D1AB2A1C129491B00056289F /* CoreVideo.framework in Frameworks */,
+				D1975A35129A02E900216BE8 /* libusb-1.0.0.1.0.dylib in Frameworks */,
+				D1975A36129A02E900216BE8 /* libusb-1.0.0.dylib in Frameworks */,
+				D1975A37129A02E900216BE8 /* libusb-1.0.a in Frameworks */,
+				D1975A38129A02E900216BE8 /* libusb-1.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D1AB2A12129490720056289F /* GLView.h */,
+				D1AB2A13129490720056289F /* GLView.m */,
+				D1DE96A412A0F42100222313 /* GLProgram.h */,
+				D1DE96A512A0F42100222313 /* GLProgram.m */,
+				D1851710129A0EA100D2014E /* AppDelegate.h */,
+				D1851711129A0EA100D2014E /* AppDelegate.m */,
+				D1975A4B129A041B00216BE8 /* kinect */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				D1AB2A0C129490210056289F /* OpenGL.framework */,
+				D1AB2A1B129491B00056289F /* CoreVideo.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* cocoaKinect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* cocoaKinect */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = cocoaKinect;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* cocoaKinect_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* cocoaKinect-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1975A2C129A02E900216BE8 /* libusb-1.0 */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D175E567129EFCAB006C8E49 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D1A6730D12A78BA9009A4C3D /* tilt.c */,
+				D175E568129EFCAB006C8E49 /* cameras.c */,
+				D175E569129EFCAB006C8E49 /* core.c */,
+				D175E56A129EFCAB006C8E49 /* freenect_internal.h */,
+				D175E56D129EFCAB006C8E49 /* usb_libusb10.c */,
+				D175E56E129EFCAB006C8E49 /* usb_libusb10.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D1975A2C129A02E900216BE8 /* libusb-1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D1975A2F129A02E900216BE8 /* lib */,
+			);
+			path = "libusb-1.0";
+			sourceTree = "<group>";
+		};
+		D1975A2F129A02E900216BE8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D1975A30129A02E900216BE8 /* libusb-1.0.0.1.0.dylib */,
+				D1975A31129A02E900216BE8 /* libusb-1.0.0.dylib */,
+				D1975A32129A02E900216BE8 /* libusb-1.0.a */,
+				D1975A33129A02E900216BE8 /* libusb-1.0.dylib */,
+				D1975A34129A02E900216BE8 /* libusb-1.0.la */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D1975A4B129A041B00216BE8 /* kinect */ = {
+			isa = PBXGroup;
+			children = (
+				D175E567129EFCAB006C8E49 /* src */,
+				D1975A4C129A041B00216BE8 /* include */,
+			);
+			path = kinect;
+			sourceTree = "<group>";
+		};
+		D1975A4C129A041B00216BE8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D1975A4D129A041B00216BE8 /* libfreenect.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* cocoaKinect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "cocoaKinect" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				D1AB2A9A1294966F0056289F /* Copy Frameworks */,
+				D1515B9412949A0600D87289 /* Run Script to fix usb framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cocoaKinect;
+			productInstallPath = "$(HOME)/Applications";
+			productName = cocoaKinect;
+			productReference = 8D1107320486CEB800E47090 /* cocoaKinect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "cocoaKinect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* cocoaKinect */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* cocoaKinect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				D1975A39129A02E900216BE8 /* libusb-1.0.la in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1515B9412949A0600D87289 /* Run Script to fix usb framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script to fix usb framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\ninstall_name_tool -change /usr/local/lib/libusb-1.0.0.dylib @executable_path/../Frameworks/libusb-1.0/libusb-1.0.0.dylib ${TARGET_BUILD_DIR}/cocoaKinect.app/Contents/MacOS/cocoaKinect\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				D1AB2A14129490720056289F /* GLView.m in Sources */,
+				D1851712129A0EA100D2014E /* AppDelegate.m in Sources */,
+				D175E56F129EFCAB006C8E49 /* cameras.c in Sources */,
+				D175E570129EFCAB006C8E49 /* core.c in Sources */,
+				D175E573129EFCAB006C8E49 /* usb_libusb10.c in Sources */,
+				D1DE96A612A0F42100222313 /* GLProgram.m in Sources */,
+				D1A6730E12A78BA9009A4C3D /* tilt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = cocoaKinect_Prefix.pch;
+				INFOPLIST_FILE = "cocoaKinect-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = cocoaKinect;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = cocoaKinect_Prefix.pch;
+				INFOPLIST_FILE = "cocoaKinect-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = cocoaKinect;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}";
+				LIBRARY_SEARCH_PATHS = "${SOURCE_ROOT}/libusb-1.0/lib/";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SOURCE_ROOT}";
+				LIBRARY_SEARCH_PATHS = "${SOURCE_ROOT}/libusb-1.0/lib/";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "cocoaKinect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "cocoaKinect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

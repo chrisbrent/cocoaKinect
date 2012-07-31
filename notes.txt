@@ -1,0 +1,18 @@
+28/11/2010 <baby-rabbit> rpointon@fernlightning.com
+
+Licenses:
+	The project is for demo purposes.
+	It's the same as https://github.com/OpenKinect/libfreenect/
+	- frankly I don't care what you do with this code, hopefully you'll be nice and add me to your credits
+
+Support
+	None.
+	IRC might be best for now irc://irc.freenode.net/#openkinect
+	email - keep it brief and to the point otherwise it goes in the spam box.
+
+Updating the kinect libraries:
+	The include and lib folders from the c folder within the git project can be copied into the kinect folder of this project.
+	Note it may be necessary to add/delete files from this project as changes occur in git
+
+Updating the libusb libraries:
+	After doing the usual configure/patch/make/install dance then usb files from /usr/local/lib & /usr/local/include can be copied into the appropriate places in the libusb folder
