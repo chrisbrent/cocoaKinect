@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8A659FA415FEFA38005050AC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A659FA315FEFA38005050AC /* OpenGL.framework */; };
+		8A659FA615FEFA4C005050AC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A659FA515FEFA4C005050AC /* CoreVideo.framework */; };
+		8A659FA815FEFB2F005050AC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A659FA715FEFB2F005050AC /* AppKit.framework */; };
+		8A659FAA15FEFB54005050AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A659FA915FEFB54005050AC /* CoreData.framework */; };
+		8A659FAC15FEFB61005050AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A659FAB15FEFB61005050AC /* Foundation.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		D175E56F129EFCAB006C8E49 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = D175E568129EFCAB006C8E49 /* cameras.c */; };
 		D175E570129EFCAB006C8E49 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = D175E569129EFCAB006C8E49 /* core.c */; };
 		D175E573129EFCAB006C8E49 /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = D175E56D129EFCAB006C8E49 /* usb_libusb10.c */; };
@@ -26,9 +30,7 @@
 		D1975A3E129A031800216BE8 /* libusb-1.0.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A31129A02E900216BE8 /* libusb-1.0.0.dylib */; };
 		D1975A3F129A032D00216BE8 /* libusb-1.0.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D1975A33129A02E900216BE8 /* libusb-1.0.dylib */; };
 		D1A6730E12A78BA9009A4C3D /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = D1A6730D12A78BA9009A4C3D /* tilt.c */; };
-		D1AB2A0D129490210056289F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AB2A0C129490210056289F /* OpenGL.framework */; };
 		D1AB2A14129490720056289F /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AB2A13129490720056289F /* GLView.m */; };
-		D1AB2A1C129491B00056289F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AB2A1B129491B00056289F /* CoreVideo.framework */; };
 		D1DE96A612A0F42100222313 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DE96A512A0F42100222313 /* GLProgram.m */; };
 /* End PBXBuildFile section */
 
@@ -52,13 +54,14 @@
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* cocoaKinect_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoaKinect_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8A659FA315FEFA38005050AC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		8A659FA515FEFA4C005050AC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		8A659FA715FEFB2F005050AC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		8A659FA915FEFB54005050AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		8A659FAB15FEFB61005050AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8D1107310486CEB800E47090 /* cocoaKinect-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cocoaKinect-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* cocoaKinect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocoaKinect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D175E568129EFCAB006C8E49 /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cameras.c; sourceTree = "<group>"; };
@@ -75,10 +78,8 @@
 		D1975A34129A02E900216BE8 /* libusb-1.0.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libusb-1.0.la"; sourceTree = "<group>"; };
 		D1975A4D129A041B00216BE8 /* libfreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfreenect.h; sourceTree = "<group>"; };
 		D1A6730D12A78BA9009A4C3D /* tilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tilt.c; sourceTree = "<group>"; };
-		D1AB2A0C129490210056289F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		D1AB2A12129490720056289F /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
 		D1AB2A13129490720056289F /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
-		D1AB2A1B129491B00056289F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		D1DE96A412A0F42100222313 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
 		D1DE96A512A0F42100222313 /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,9 +89,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				D1AB2A0D129490210056289F /* OpenGL.framework in Frameworks */,
-				D1AB2A1C129491B00056289F /* CoreVideo.framework in Frameworks */,
+				8A659FAC15FEFB61005050AC /* Foundation.framework in Frameworks */,
+				8A659FAA15FEFB54005050AC /* CoreData.framework in Frameworks */,
+				8A659FA815FEFB2F005050AC /* AppKit.framework in Frameworks */,
+				8A659FA615FEFA4C005050AC /* CoreVideo.framework in Frameworks */,
+				8A659FA415FEFA38005050AC /* OpenGL.framework in Frameworks */,
 				D1975A35129A02E900216BE8 /* libusb-1.0.0.1.0.dylib in Frameworks */,
 				D1975A36129A02E900216BE8 /* libusb-1.0.0.dylib in Frameworks */,
 				D1975A37129A02E900216BE8 /* libusb-1.0.a in Frameworks */,
@@ -118,7 +121,11 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				8A659FAB15FEFB61005050AC /* Foundation.framework */,
+				8A659FA915FEFB54005050AC /* CoreData.framework */,
+				8A659FA715FEFB2F005050AC /* AppKit.framework */,
+				8A659FA515FEFA4C005050AC /* CoreVideo.framework */,
+				8A659FA315FEFA38005050AC /* OpenGL.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -126,11 +133,6 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
-				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				D1AB2A0C129490210056289F /* OpenGL.framework */,
-				D1AB2A1B129491B00056289F /* CoreVideo.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -366,7 +368,7 @@
 				INFOPLIST_FILE = "cocoaKinect-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = cocoaKinect;
-				SDKROOT = "";
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -383,7 +385,7 @@
 				INFOPLIST_FILE = "cocoaKinect-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = cocoaKinect;
-				SDKROOT = "";
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};

@@ -179,6 +179,7 @@ void calcNormal(VectorP *poly) {
 }
 
 - (IBAction)savePly:(id)sender {
+    int depthAttempt = 0;
 	VectorP tempVector;
 	NSMutableString *PLYFile;
 		
@@ -188,6 +189,8 @@ void calcNormal(VectorP *poly) {
 	uint16_t *depth = [self createDepthData];
 		while (!depth) {
 			depth = [self createDepthData];
+            depthAttempt++;
+            NSLog(@"depth attempt number %d", depthAttempt);
 		}
 	if(depth) {
 		int result;
@@ -196,8 +199,7 @@ void calcNormal(VectorP *poly) {
 		NSSavePanel *oPanel = [NSSavePanel savePanel];
 		[oPanel setAllowedFileTypes:fileTypes];
 		
-		result = [oPanel runModalForDirectory:NSHomeDirectory()
-										 file:nil];
+		result = [oPanel runModal];
 		if (result == NSOKButton) {
 			NSString *aFile = [[oPanel URL] path];
 		
@@ -232,9 +234,7 @@ void calcNormal(VectorP *poly) {
 		[PLYFile appendString:@"end_header\n"];
 		[PLYFile appendString:temps];
 		[PLYFile writeToFile:aFile atomically:YES];
-		
-		
-	}
+	    }
 	} else {
 
 	}
@@ -246,6 +246,7 @@ void calcNormal(VectorP *poly) {
 
 - (IBAction)saveSTL:(id)sender {
 	VectorP tempPoly[3];
+    int depthAttempt = 0;
 	
 	NSMutableString *PLYFile;
 	
@@ -254,6 +255,8 @@ void calcNormal(VectorP *poly) {
 	uint16_t *depth = [self createDepthData];
 	while (!depth) {
 		depth = [self createDepthData];
+        depthAttempt++;
+        NSLog(@"depth attempt number %d", depthAttempt);
 	}
 	if(depth) {
 		int result;
@@ -262,8 +265,7 @@ void calcNormal(VectorP *poly) {
 		NSSavePanel *oPanel = [NSSavePanel savePanel];
 		[oPanel setAllowedFileTypes:fileTypes];
 		
-		result = [oPanel runModalForDirectory:NSHomeDirectory()
-										 file:nil];
+		result = [oPanel  runModal];
 		if (result == NSOKButton) {
 			NSString *aFile = [[oPanel URL] path];
 			
