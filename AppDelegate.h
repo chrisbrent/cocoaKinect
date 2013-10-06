@@ -84,9 +84,9 @@ typedef struct {
 @property BOOL mirror;
 @property BOOL natural;
 @property enum drawMode mode; // 0=2d, 1=points, 2=mesh
-@property float videoScale;
-@property float videoX;
-@property float videoY;
+@property (nonatomic) float videoScale;
+@property (nonatomic) float videoX;
+@property (nonatomic) float videoY;
 
 - (double)getMin;
 - (double)getMax;

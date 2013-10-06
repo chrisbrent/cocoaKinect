@@ -358,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -368,7 +369,7 @@
 				INFOPLIST_FILE = "cocoaKinect-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = cocoaKinect;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
@@ -385,7 +386,7 @@
 				INFOPLIST_FILE = "cocoaKinect-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = cocoaKinect;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};

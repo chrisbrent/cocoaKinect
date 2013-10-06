@@ -233,7 +233,12 @@ void calcNormal(VectorP *poly) {
 		[PLYFile appendString:@"property float z\n"];
 		[PLYFile appendString:@"end_header\n"];
 		[PLYFile appendString:temps];
-		[PLYFile writeToFile:aFile atomically:YES];
+            NSError *error = nil;
+            if(![PLYFile writeToFile:aFile atomically:YES encoding:NSASCIIStringEncoding error:&error]){
+                if (error) {
+                    NSLog(@"%@", error.localizedDescription);
+                }
+            }
 	    }
 	} else {
 
@@ -248,7 +253,7 @@ void calcNormal(VectorP *poly) {
 	VectorP tempPoly[3];
     int depthAttempt = 0;
 	
-	NSMutableString *PLYFile;
+	NSMutableString *STLFile;
 	
 	[NSThread sleepForTimeInterval:_snapdelay];
 	
@@ -305,11 +310,17 @@ void calcNormal(VectorP *poly) {
 				}
 			}
 			
-			PLYFile = [[NSMutableString alloc] initWithString:@"solid object\n"];
+			STLFile = [[NSMutableString alloc] initWithString:@"solid object\n"];
 			
-			[PLYFile appendString:temps2];
-			[PLYFile appendString:@"endsolid"];
-			[PLYFile writeToFile:aFile atomically:YES];
+			[STLFile appendString:temps2];
+			[STLFile appendString:@"endsolid"];
+            NSError *error = nil;
+            
+			if(![STLFile writeToFile:aFile atomically:YES encoding:NSASCIIStringEncoding error:&error]){
+                if(error){
+                    NSLog(@"%@", error.localizedDescription);
+                }
+            }
 			
 			
 		}
@@ -322,7 +333,7 @@ void calcNormal(VectorP *poly) {
 - (IBAction)saveSTLB:(id)sender {
 	VectorP tempPoly[5];
 		
-	NSMutableData *PLYFile;
+	NSMutableData *STLBData;
 	
 	[NSThread sleepForTimeInterval:_snapdelay];
 	
@@ -339,9 +350,11 @@ void calcNormal(VectorP *poly) {
 		
 		NSSavePanel *oPanel = [NSSavePanel savePanel];
 		[oPanel setAllowedFileTypes:fileTypes];
-		
-		result = [oPanel runModalForDirectory:NSHomeDirectory()
-										 file:nil];
+		/* Use -runModal after setting up desired properties. The following parameters are replaced by properties: 'path' is replaced by 'directoryURL' and 'name' by 'nameFieldStringValue'.
+         */
+        oPanel.directoryURL=nil;
+		result = [oPanel runModal];
+        
 		if (result == NSOKButton) {
 			NSString *aFile = [[oPanel URL] path];
 			
@@ -426,14 +439,14 @@ void calcNormal(VectorP *poly) {
 								foundFace = 1;
 							} 
 
-							if((foundFace)
+							if(((foundFace)
 								&& ((depth[idx] >= _maxDepth)
 								&& (depth[idx+FREENECT_FRAME_W*stepy] >= _maxDepth)
 								&& (depth[idx+stepx*1] >= _maxDepth)
 								&& (depth[idx+stepx*1+FREENECT_FRAME_W*stepy] >= _maxDepth))
 							   
 								&& ((depth[idx+stepx*2] < _maxDepth)
-								|| (depth[idx+stepx*2+FREENECT_FRAME_W*stepy] < _maxDepth))
+								|| (depth[idx+stepx*2+FREENECT_FRAME_W*stepy] < _maxDepth)))
 							   
 								|| (x >= FREENECT_FRAME_W - stepx*2 - 1)) {
 									
@@ -564,21 +577,18 @@ void calcNormal(VectorP *poly) {
 			calcNormal(tempPoly);
 			[temps2 appendData:[self binaryVector:tempPoly]];
 			
-			
 			faceCount = faceCount + 8;
 			
-			
-			
-			
-			PLYFile = [[[NSMutableData alloc] init] autorelease];	
+			STLBData = [[[NSMutableData alloc] init] autorelease];
 			for(int o = 0; o < 20; o++) {
-				[PLYFile appendBytes:&nullb length:4];				//Blank Header
+				[STLBData appendBytes:&nullb length:4];				//Blank Header
 			}
-			[PLYFile appendBytes:&faceCount length:4];								//Number of Facets
+			[STLBData appendBytes:&faceCount length:4];								//Number of Facets
 			
-			
-			[PLYFile appendData:temps2];
-			[PLYFile writeToFile:aFile atomically:YES];
+			[STLBData appendData:temps2];
+			if(![STLBData writeToFile:aFile atomically:YES]){
+                NSLog(@"Writing to %@ failed.", aFile);
+            }
 		}
 	} else {
 		
